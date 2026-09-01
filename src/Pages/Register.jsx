@@ -1,8 +1,14 @@
+import AuthShell from '@/Components/auth/AuthShell';
+import RegisterForm from '@/Components/auth/RegisterForm';
+
 export default function RegisterPage() {
   return (
-    <div className="mx-auto max-w-5xl px-4 py-16">
-      <h1 className="text-3xl font-bold text-slate-900">Register</h1>
-      <p className="mt-3 text-slate-600">This is a placeholder registration page for the bookstore app.</p>
-    </div>
+    <AuthShell
+      title="Your next great story starts here."
+      subtitle="Create your account to save favorites, track orders, and explore books selected for every kind of reader."
+      accentText="Book Haven"
+    >
+      <RegisterForm />
+    </AuthShell>
   );
 }

@@ -7,6 +7,8 @@ export const featuredBooks = [
     price: 18.99,
     rating: 4.8,
     coverClass: 'from-amber-200 via-orange-100 to-rose-200',
+    image:
+      'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=900&q=80',
   },
   {
     id: 2,
@@ -16,6 +18,8 @@ export const featuredBooks = [
     price: 24.99,
     rating: 4.7,
     coverClass: 'from-sky-200 via-cyan-100 to-indigo-200',
+    image:
+      'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80',
   },
   {
     id: 3,
@@ -25,6 +29,8 @@ export const featuredBooks = [
     price: 16.5,
     rating: 4.6,
     coverClass: 'from-violet-200 via-fuchsia-100 to-pink-200',
+    image:
+      'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=900&q=80',
   },
   {
     id: 4,
@@ -34,6 +40,8 @@ export const featuredBooks = [
     price: 29.99,
     rating: 4.9,
     coverClass: 'from-emerald-200 via-teal-100 to-lime-200',
+    image:
+      'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=900&q=80',
   },
 ];
 

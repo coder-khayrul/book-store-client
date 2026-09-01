@@ -8,12 +8,20 @@ export default function BookCard({ book, onAddToCart }) {
   const navigate = useNavigate();
 
   return (
-    <article className="group overflow-hidden rounded-[28px] border border-border/80 bg-card shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(15,23,42,0.08)]">
-      <div className={`flex h-60 items-end justify-between bg-gradient-to-br ${book.coverClass} p-5`}>
-        <div className="rounded-full border border-white/60 bg-white/25 px-3 py-1 text-xs font-medium text-slate-800 backdrop-blur-sm">
+    <article className="group overflow-hidden rounded-[28px] border border-border/80 bg-card shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(15,23,42,0.08)]">
+      <div className={`relative h-60 overflow-hidden bg-gradient-to-br ${book.coverClass}`}>
+        <img
+          src={book.image}
+          alt={book.title}
+          className="h-full w-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/35 via-slate-900/5 to-transparent" />
+
+        <div className="absolute left-4 top-4 rounded-full border border-white/60 bg-white/25 px-3 py-1 text-xs font-medium text-slate-800 backdrop-blur-sm">
           {book.category}
         </div>
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/60 bg-white/25 text-lg font-semibold text-slate-800 shadow-sm backdrop-blur-sm">
+
+        <div className="absolute bottom-4 right-4 flex h-12 w-12 items-center justify-center rounded-2xl border border-white/60 bg-white/25 text-lg font-semibold text-slate-800 shadow-sm backdrop-blur-sm">
           {book.title.slice(0, 1)}
         </div>
       </div>
@@ -36,10 +44,7 @@ export default function BookCard({ book, onAddToCart }) {
         </div>
 
         <div className="flex gap-2 pt-2">
-          <Button
-            className="flex-1"
-            onClick={() => onAddToCart(book)}
-          >
+          <Button className="flex-1" onClick={() => onAddToCart(book)}>
             Add to Cart
           </Button>
           <Button variant="outline" className="flex-1" onClick={() => navigate(`/books/${book.id}`)}>
