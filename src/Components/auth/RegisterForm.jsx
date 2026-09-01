@@ -46,7 +46,7 @@ export default function RegisterForm() {
       <CardHeader className="space-y-2 pb-6">
         <CardTitle className="text-3xl font-bold tracking-tight text-[#111827]">Create Your Account</CardTitle>
         <CardDescription className="text-base text-slate-500">
-          Join Book Haven and start discovering your next favorite book.
+          Join BookMart and start discovering your next favorite book.
         </CardDescription>
       </CardHeader>
 

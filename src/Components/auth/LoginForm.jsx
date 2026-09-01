@@ -42,7 +42,7 @@ export default function LoginForm() {
       <CardHeader className="space-y-2 pb-6">
         <CardTitle className="text-3xl font-bold tracking-tight text-[#111827]">Welcome Back</CardTitle>
         <CardDescription className="text-base text-slate-500">
-          Sign in to continue to your Book Haven account.
+          Sign in to continue to your BookMart account.
         </CardDescription>
       </CardHeader>
 

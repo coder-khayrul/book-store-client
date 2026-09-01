@@ -8,6 +8,7 @@ import CartPage from '@/Pages/Cart';
 import CategoriesPage from '@/Pages/Categories';
 import Home from '@/Pages/Home';
 import LoginPage from '@/Pages/Login';
+import ProfilePage from '@/Pages/Profile';
 import RegisterPage from '@/Pages/Register';
 
 export const router = createBrowserRouter([
@@ -22,6 +23,7 @@ export const router = createBrowserRouter([
       { path: 'cart', Component: CartPage },
       { path: 'login', Component: LoginPage },
       { path: 'register', Component: RegisterPage },
+      { path: 'profile', Component: ProfilePage },
     ],
   },
 ]);

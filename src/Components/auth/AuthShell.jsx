@@ -1,6 +1,6 @@
 import { BookOpen } from 'lucide-react';
 
-export default function AuthShell({ title, subtitle, children, accentText = 'Book Haven' }) {
+export default function AuthShell({ title, subtitle, children, accentText = 'BookMart' }) {
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#FFFBEB] text-slate-900">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">

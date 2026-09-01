@@ -6,7 +6,7 @@ export default function RegisterPage() {
     <AuthShell
       title="Your next great story starts here."
       subtitle="Create your account to save favorites, track orders, and explore books selected for every kind of reader."
-      accentText="Book Haven"
+      accentText="BookMart"
     >
       <RegisterForm />
     </AuthShell>
